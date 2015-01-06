@@ -7,7 +7,7 @@ floster
 
 ###以下をscriptに記述
 
-- $(element).floater();  
+    $(element).floater()
 
 
 ###オプションは以下の通り。
