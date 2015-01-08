@@ -18,7 +18,7 @@ floster
 - fixed: trueでposition: fixedに切り替え。初期値はfalse。  
 
 
-####オプションを適用すると、こんな感じ。
+####オプションの適用方法は以下の通り
 
     $("nav").floater({
         wait: 0.75,
