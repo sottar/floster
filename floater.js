@@ -1,8 +1,12 @@
-(function($) {
+/*--------------------------------------------------------------------------*
+ *  jQuery floater plugin
+ *  MIT-style license. 
+ *  2016 Sota Ohara
+ *--------------------------------------------------------------------------*/
+ (function($) {
   $.fn.extend({
     floater: function(options) {
       var opts = $.extend({}, $.fn.floster.defaults, options);
-      
       opt.wait = $(this).outerHeight() - $(window).height() * opt.wait;
 
       $(this).each(function() {
@@ -41,7 +45,7 @@
                 }, {
                   duration: opt.speed,
                   easing: opt.easing
-                });      
+                });
               }else if( s > opt.scrollTo ) {
               self.stop(true).animate({
                 top: opt.scrollTo - opt.scrollFrom
@@ -73,8 +77,7 @@
     wait: 1,
     speed: 1000,
     easing: 'swing',
-    scrollTop：null,
+    scrollTop: null,
     scrollFrom: null
   }
-
 })(jQuery);
